@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.edit-button {
+    background-color: #3490dc;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.delete-button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.generate-button {
+    background-color: #4ea8f5;
+    color: white;
+    height: 24px;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 10px 4px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.checkbox {
+    height: 44px;
+    width: 44px;
+}
+
+.pagination {
+    border-radius: 0.25rem;
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: small;
+}
+.page-link {
+    background-color: #fff;
+    border: 1px solid #d1d5db;
+    color: #6366f1;
+    display: block;
+    line-height: 1.25;
+    margin-left: -1px;
+    padding: 0.5rem 0.75rem;
+    position: relative;
+}
+.page-link:hover {
+    background-color: #e5e7eb;
+    border-color: #d1d5db;
+    color: #4f46e5;
+    text-decoration: none;
+    z-index: 2;
+}
+.page-link:focus {
+    box-shadow: 0 0 0 0.2rem rgba(64, 64, 200, 0.25);
+    outline: 0;
+    z-index: 3;
+}
+.page-item:first-child .page-link {
+    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+    margin-left: 0;
+}
+.page-item:last-child .page-link {
+    border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+.page-item.active .page-link {
+    background-color: #4040c8;
+    border-color: #4040c8;
+    color: #fff;
+    z-index: 3;
+}
+.page-item.disabled .page-link {
+    background-color: #fff;
+    border-color: #d1d5db;
+    color: #4b5563;
+    cursor: auto;
+    pointer-events: none;
+}
+.pagination-lg .page-link {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding: 0.75rem 1.5rem;
+}
+.pagination-lg .page-item:first-child .page-link {
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.pagination-lg .page-item:last-child .page-link {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.pagination-sm .page-link {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    padding: 0.25rem 0.5rem;
+}
+.pagination-sm .page-item:first-child .page-link {
+    border-bottom-left-radius: 0.2rem;
+    border-top-left-radius: 0.2rem;
+}
+.pagination-sm .page-item:last-child .page-link {
+    border-bottom-right-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
+}
